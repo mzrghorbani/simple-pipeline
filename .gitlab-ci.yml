@@ -13,4 +13,4 @@ test:
     stage: test
     script:
         - echo "Testing"
-        - test -f "build/info.txt"
+        - test [ -f build/info.txt ] && echo "File exist" || echo "File does not exist"
