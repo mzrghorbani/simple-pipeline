@@ -16,7 +16,7 @@ test:
     stage: test
     script:
         - echo "Testing"
-        - test if [[ -f build/info.txt ]] 
+        - test if [[ -f build/info.txt ]]; 
         - then
-        - echo "File exist"
+        - echo "File exist";
         - fi;
