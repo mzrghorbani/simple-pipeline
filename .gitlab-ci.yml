@@ -1,0 +1,16 @@
+stages:
+    - build
+    - test
+    
+build:
+    stages: build
+    script:
+        - echo "Building"
+        - mkdir build
+        - touch build/info.txt
+        
+test:
+    stages: test
+    script:
+        - echo "Testing"
+        - test -f "build/info.txt"
