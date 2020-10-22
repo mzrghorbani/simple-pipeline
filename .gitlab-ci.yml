@@ -1,19 +1,21 @@
 stages:
     - build
     - test
+    - deploy
+    
+image: alpine
     
 build:
     stage: build
     script:
-        - echo "Building"
-        - mkdir build
-        - touch build/info.txt
-    artifacts:
-        paths:
-        - build/
+        - echo "Build the project."
         
 test:
     stage: test
     script:
-        - echo "Testing"
-        - test [ -e "build/info.txt" ] && echo "OK" || echo "NOK"
+        - echo "Testing the project."
+        
+deploy:
+    stage: deploy
+    script:
+        - echo "Deploying the project."
