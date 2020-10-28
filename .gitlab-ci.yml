@@ -2,7 +2,7 @@ stages:
     - build
     - test
     - deploy
-    - test
+    - develop
     
 image: alpine
     
@@ -21,12 +21,7 @@ deploy:
     script:
         - echo "Deploying the project."
         
-test:
-    stage: test
+develop:
+    stage: develop
     script:
-        - echo "Testing the project."
-
-deploy:
-    stage: deploy
-    script:
-        - echo "Deploying the project."
+        - echo "Development of the project"
