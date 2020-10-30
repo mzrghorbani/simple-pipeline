@@ -10,7 +10,7 @@ build:
     stage: build
     script:
         - echo "Build the project."
-        - echo "$CMSSW"
+        - echo pwd
         
 test:
     stage: test
