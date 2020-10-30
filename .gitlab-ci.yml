@@ -10,7 +10,7 @@ build:
     stage: build
     script:
         - echo "Build the project."
-        - echo pwd
+        - pwd
         
 test:
     stage: test
